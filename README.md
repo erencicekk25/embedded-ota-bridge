@@ -1,5 +1,9 @@
 # Gömülü OTA Köprüsü
 
+[![CI](https://github.com/erencicekk25/embedded-ota-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/erencicekk25/embedded-ota-bridge/actions/workflows/ci.yml)
+![Language](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Bu proje, bir firmware dosyasını TCP üzerinden parça parça gönderen ve dosyayı bilgisayardaki simüle flash alanına yazan küçük bir OTA demosudur. Gerçek bir cihaza bağlanmaz; güncellenen flash alanı, diskte oluşturulan bir binary dosyasıyla temsil edilir.
 
 ## Gereksinimler
