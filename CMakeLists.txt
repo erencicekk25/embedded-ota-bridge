@@ -18,6 +18,8 @@ target_include_directories(ota_core PUBLIC include)
 
 if(WIN32)
     target_link_libraries(ota_core PUBLIC ws2_32)
+    # windows.h defines min/max macros that break std::numeric_limits<T>::max().
+    target_compile_definitions(ota_core PUBLIC NOMINMAX WIN32_LEAN_AND_MEAN)
 endif()
 
 if(MSVC)
